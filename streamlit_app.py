@@ -668,13 +668,13 @@ model_choice = st.sidebar.radio(
     "使用するGeminiモデル",
     options=["Pro", "Flash"],
     index=0,
-    help="Pro: 高品質（26円/記事） | Flash: 高速・低コスト（1.6円/記事）"
+    help="Pro: 高品質（4-6円/記事） | Flash: 高速・低コスト（1.6円/記事）"
 )
 
 # モデル名をセッションに保存
 if model_choice == "Pro":
     st.session_state["selected_model"] = "gemini-1.5-pro"
-    st.sidebar.success("💎 Pro選択中\n約26円/記事（高品質）")
+    st.sidebar.success("💎 Pro選択中\n約4～5円/記事（高品質）")
 else:
     st.session_state["selected_model"] = "gemini-1.5-flash"  
     st.sidebar.info("⚡ Flash選択中\n約1.6円/記事（94%削減）")
