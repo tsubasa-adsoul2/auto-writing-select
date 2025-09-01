@@ -732,7 +732,7 @@ with colL:
         co_terms = sorted({w.strip() for w in raw_list if w.strip()})
 
     st.markdown("### 🚫 禁止事項（任意_1行=1項目）")
-    banned_text = st.text_area("入れたくない内容があるならば", value=st.session_state.get("banned_text", ""), height=120)
+    banned_text = st.text_area("入れたくない内容があるならば記入してください。カニバリ対策です。", value=st.session_state.get("banned_text", ""), height=120)
     st.session_state["banned_text"] = banned_text
     merged_banned = [l.strip() for l in banned_text.splitlines() if l.strip()]
 
