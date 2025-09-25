@@ -674,10 +674,10 @@ model_choice = st.sidebar.radio(
 # モデル名をセッションに保存
 if model_choice == "Pro":
     st.session_state["selected_model"] = "gemini-1.5-pro"
-    st.sidebar.success("💎 Pro選択中\n約4～5円/記事（高品質）")
+    st.sidebar.success("💎 Pro選択中\n約12～13円/記事（高品質）")
 else:
     st.session_state["selected_model"] = "gemini-1.5-flash"  
-    st.sidebar.info("⚡ Flash選択中\n約1.6円/記事（SEO特化なら）")
+    st.sidebar.info("⚡ Flash選択中\n約5円/記事（SEO特化なら）")
 
 st.sidebar.markdown("---")  # 区切り線
 
